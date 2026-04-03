@@ -1,0 +1,68 @@
+🟢 Ejercicio 1 – Entrada y salida
+
+Pide el nombre y edad del usuario y muestra:
+
+Hola Javier, tienes 20 años
+
+🟢 Ejercicio 2 – Condicional
+
+Pide un número e indica si es:
+
+positivo
+
+negativo
+
+cero
+
+🟢 Ejercicio 3 – Loop
+
+Imprime los números del 1 al 10 usando:
+
+for
+
+while
+
+🟢 Ejercicio 4 – Vector
+
+Crea un vector<int> con 5 números y calcula la suma.
+
+🟢 Ejercicio 5 – Strings
+
+Pide una palabra y muestra:
+
+longitud
+
+primera letra
+
+última letra
+
+🟡 Ejercicio 6 – Función
+
+Crea una función que reciba dos números y regrese el mayor.
+
+🟡 Ejercicio 7 – Clase básica
+
+Crea una clase Persona con:
+
+nombre
+
+edad
+
+método saludar()
+
+🟡 Ejercicio 8 – Condición + vector
+
+Pide números hasta que el usuario escriba 0.
+Guárdalos en un vector y muestra el mayor.
+
+🔴 Ejercicio 9 – Manejo de errores
+
+Pide dos números y maneja la división entre cero usando try/catch.
+
+🔴 Ejercicio 10 – Mini reto
+
+Crea un programa que:
+
+guarde nombres en un vector
+
+permita agregar, listar y salir (menú)

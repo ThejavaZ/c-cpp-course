@@ -1,0 +1,167 @@
+| Contexto                      | Convención más usada                      |
+| ----------------------------- | ----------------------------------------- |
+| **C (clásico / sistemas)**    | `snake_case`                              |
+| **C++ moderno (STL / POO)**   | `camelCase` o `snake_case` (según estilo) |
+| **Archivos (.c / .h / .cpp)** | `snake_case`                              |
+| **Macros**                    | `UPPER_SNAKE_CASE`                        |
+| **Clases (C++)**              | `PascalCase`                              |
+
+🔹 C (lenguaje C puro)
+
+👉 C es procedural y de sistemas, por tradición UNIX.
+
+Variables y funciones
+
+✅ snake_case
+
+int total_items;
+float average_score;
+
+void calcular_total();
+
+Archivos
+file_system.c
+memory_manager.h
+
+Macros
+#define MAX_BUFFER_SIZE 1024
+
+
+📌 El kernel de Linux, libc, POSIX → TODO usa snake_case.
+
+🔹 C++ (realidad práctica)
+🔸 Variables y funciones
+
+✔️ Ambos se usan, pero:
+
+STL usa snake_case
+
+Proyectos modernos usan camelCase
+
+int totalItems;
+void calculateTotal();
+
+
+STL:
+
+vector<int> my_vector;
+my_vector.push_back(10);
+
+
+👉 Mezclar estilos no es error, pero no dentro del mismo proyecto.
+
+🔹 Clases (C++)
+
+✅ PascalCase (UpperCamelCase)
+
+class UserAccount {
+public:
+    void login();
+};
+
+
+Esto es casi universal.
+
+🔹 Archivos en C++
+
+Lo más común:
+
+user_account.h
+user_account.cpp
+
+
+Algunos proyectos:
+
+UserAccount.hpp
+UserAccount.cpp
+
+
+👉 snake_case es el más seguro.
+
+🔹 Constantes y macros
+
+SIEMPRE:
+
+#define MAX_USERS 100
+constexpr int DEFAULT_PORT = 8080;
+
+🔹 Miembros privados (convención común)
+class User {
+private:
+    int age_;
+    string name_;
+};
+
+
+El _ final indica miembro interno.
+
+🧪 Convención recomendada (profesional)
+
+Si estás empezando o quieres algo aceptado en todos lados:
+
+✔️ C
+snake_case en TODO
+
+✔️ C++
+Clases → PascalCase
+Funciones y variables → camelCase
+Archivos → snake_case
+Macros → UPPER_SNAKE_CASE
+
+
+Ejemplo completo:
+
+// user_account.h
+class UserAccount {
+public:
+    void createAccount();
+private:
+    int userId_;
+};
+
+🚫 Qué NO hacer
+
+❌ Mezclar en el mismo archivo:
+
+int total_items;
+int totalItems;
+
+
+❌ Variables como:
+
+int X;
+int temp2;
+
+// Esto es un comentario
+
+
+/*
+   Comentario
+   de varias líneas
+*/
+
+/// Comentario de documentación
+/**
+ * Comentario largo de documentación
+ */
+
+#include <string>
+#include <iostream>
+
+string nombre = "Javier";
+cout << "Hola " + nombre << endl;
+
+cout << "Hola " << nombre << endl;
+
+cout << "Edad: " + 20;
+
+| Escape | Significado     |
+| ------ | --------------- |
+| `\n`   | Nueva línea     |
+| `\t`   | Tab             |
+| `\"`   | Comillas        |
+| `\\`   | Barra invertida |
+
+string texto = R"(Hola
+Mundo
+sin escapes)";
